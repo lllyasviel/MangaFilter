@@ -13,52 +13,49 @@
 
 <div class="crumb">
 	<a href="https://github.com/lllyasviel">Style2Paints Research</a> →
-	[Zhang et al. 2020]
+	[Zhang et al. 2021]
 	</span>
 </div>
 
 
 <div class="content">
 <div class="paperheader">
-  <div class="papertitle"> Erasing Appearance Preservation in Optimization-based Smoothing </div>
+  <div class="papertitle"> Generating Manga from Illustrations via Mimicking Manga Creation Workflow </div>
   <br>
-  <div class="pubinfo"> European Conference on Computer Vision (ECCV) 2020 (Spotlight) </div>
+  <div class="pubinfo"> 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) </div>
   <br>
-  <div class="authors"> <a href="https://github.com/lllyasviel">Lvmin Zhang</a>, <a href="https://moeka.me/">Chengze Li</a>, Yi Ji, Chunping Liu, and <a href="https://www.cse.cuhk.edu.hk/~ttwong/myself.html">Tien-tsin Wong</a> </div>
+  <div class="authors"> <a href="https://github.com/lllyasviel">Lvmin Zhang</a>, Xinrui Wang, <a href="https://fqnchina.github.io/">Qingnan Fan</a>, Yi Ji, and Chunping Liu </div>
 </div>
 
 <div class="paperimg"><img src="./imgs/teaser.jpg"></div>
-<div class="longcaption">A fine-tuned result from the Erasing Appearance Preservation (EAP) framework with L1 smoothing. In this example, our EAP framework decomposes the left image and outputs the flat color layer, the shadow layer, and the specular reflection layer from an illustration. </div>
+<div class="longcaption">Generating manga from illustrations. Our framework automatically generate the high-quality manga given the illustrations. The colorful images are inputs and the manga images are outputs.</div>
 <div class="header">Abstract</div>
 <p>
 </p><div class="abstract">
-  Optimization-based image smoothing is routinely formulated as the game between a smoothing energy and an appearance preservation energy. Achieving adequate smoothing is a fundamental goal of these image smoothing algorithms. We show that partially "erasing" the appearance preservation facilitate adequate image smoothing. In this paper, we call this manipulation as Erasing Appearance Preservation (EAP). We conduct an user study, allowing users to indicate the "erasing" positions by drawing scribbles interactively, to verify the correctness and effectiveness of EAP. We observe the characteristics of human-indicated "erasing" positions, and then formulate a simple and effective 0-1 knapsack to automatically synthesize the "erasing" positions. We test our synthesized erasing positions in a majority of image smoothing methods. Experimental results and large-scale perceptual human judgments show that the EAP solution tends to encourage the pattern separation or elimination capabilities of image smoothing algorithms. We further study the performance of the EAP solution in many image decomposition problems to decompose textures, shadows, and the challenging specular reflections. We also present examinations of diversiform image manipulation applications like texture removal, retexturing, intrinsic decomposition, layer extraction, recoloring, material manipulation, etc. Due to the widespread applicability of image smoothing, the EAP is also likely to be used in more image editing applications.
+  We present a framework to generate manga from digital illustrations. In professional mange studios, the manga creation workflow consists of three key steps: (1) Artists use line drawings to delineate the structural outlines in manga storyboards. (2) Artists apply several types of regular screentones to render the shading, occlusion, and object materials. (3) Artists selectively paste irregular screen textures onto the canvas to achieve various background layouts or special effects. Motivated by this workflow, we propose a data-driven framework to convert a digital illustration into three corresponding components: manga line drawing, regular screentone, and irregular screen texture. These components can be directly composed into manga images and can be further retouched for more plentiful manga creations. To this end, we create a large-scale dataset with these three components annotated by artists in a human-in-the-loop manner. We conduct both perceptual user study and qualitative evaluation of the generated manga, and observe that our generated image layers for these three components are practically usable in the daily works of manga artists. We provide 60 qualitative results and 15 additional comparisons in the supplementary material. We will make our presented manga dataset publicly available to assist related applications.
 </div>
 <div class="header">Files</div>
 <ul>
-<li> <a href="https://lllyasviel.github.io/AppearanceEraser/paper/paper.pdf">Paper</a> (9.91MB, a PDF file) </li>
-<li> <a href="https://lllyasviel.github.io/AppearanceEraser/paper/video.mp4">Video</a> (19.8MB, a MP4 video, 2 minutes) </li>
+<li> <a href=" ">Paper</a> (27.81MB, a PDF file) </li>
 </ul>
 <div class="header">See Also</div>
 <ul>
 
-<li> <a href="https://github.com/lllyasviel/AppearanceEraser">Source Code</a> - Core smoothing algorithm only, version 0.1, several Matlab files. User interface not included. Licensed by Style2Paints for noncommercial research use only.</li>
-
-<li> <a href="https://github.com/lllyasviel/AppearanceEraser">Supplementary Document</a> - A document of some additional exposition and engineering details.</li>
+<li> <a href=" ">Supplementary Document</a> - A document of additional results and engineering details.</li>
 
 </ul>
 <div class="header">Citation</div>
 <p>
-Lvmin Zhang, Chengze Li, Yi JI, Chunping Liu, and Tien-tsin Wong.<br>
-"Erasing Appearance Preservation in Optimization-based Smoothing."<br>
-<i>European Conference on Computer Vision (ECCV)</i>, May 2020.
+Lvmin Zhang, Xinrui Wang, Qingnan Fan, Yi Ji, and Chunping Liu.<br>
+"Generating Manga from Illustrations via Mimicking Manga Creation Workflow."<br>
+<i>2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, June 2021.
 </p><div class="header">BibTeX</div>
 <p>
 </p><pre>@InProceedings{EAP2020,
-    author={Lvmin Zhang, Chengze Li, Yi JI, Chunping Liu, and Tien-tsin Wong}, 
-    booktitle={European Conference on Computer Vision (ECCV)}, 
-    title={Erasing Appearance Preservation in Optimization-based Smoothing}, 
-    year={2020}, 
+    author={Lvmin Zhang and Xinrui Wang and Qingnan Fan and Yi Ji and Chunping Liu}, 
+    booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+    title={Generating Manga from Illustrations via Mimicking Manga Creation Workflow}, 
+    year={2021}, 
     }
 </pre>
 </div>
